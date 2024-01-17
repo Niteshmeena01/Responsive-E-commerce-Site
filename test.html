@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            
+      </style>
+</head>
+<body>
+      <div id="main">
+
+      </div>
+      <script>
+           let div = document.getElementById('main') 
+            let obj = [
+
+{  
+      img :'./pizza-png-15.png',
+     Name  :'Italic Pizza',
+     Price : 250,
+//      count : 0 
+},
+{  
+      img :'./desktop-wallpaper-pizza-barbecue-pesto-piri-piri-chicken-meat-transparent-background-chicken-pizza-png-png.jpg',
+     Name  :'Veg Veggie Pizza',
+     Price : 350,
+//      count : 0 
+},
+{  
+      img :'./pizza-isolate-white-background-generative-ai_74760-2619.avif',
+     Name  :'Mushroom Pizza',
+     Price : 450,
+//      count : 0 
+},
+{  
+      img :'./pizza-isolate-white-background-generative-ai_74760-2619.avif',
+     Name  :'Sweets Corn Cheese Pizza',
+     Price : 200,
+     count : 0 
+},
+{  
+      img :'./pizza-with-white-background-high-quality-ultra-hd-free-photo-removebg-preview.png',
+     Name  :'Onion Capsicum Pizza',
+     Price : 150,
+//      count : 0 
+},
+{  
+      img :'./download.jpeg',
+     Name  :'Chicken Prep Pizza',
+     Price : 450,
+//      count : 0 
+}
+]
+
+const container = document.getElementById('main');
+
+obj.map((item) => {
+  const listItem = document.createElement('div');
+  listItem.className = 'item'; // Add a class for styling if needed
+
+  const imageElement = document.createElement('img');
+  imageElement.src = item.img;
+  listItem.appendChild(imageElement);
+
+  const nameElement = document.createElement('p');
+  nameElement.textContent = item.Name;
+  listItem.appendChild(nameElement);
+
+  const priceElement = document.createElement('p');
+  priceElement.textContent = `Price: $${item.Price}`;
+  listItem.appendChild(priceElement);
+
+  const countElement = document.createElement('p');
+  countElement.textContent = `Count: ${item.count}`;
+  listItem.appendChild(countElement);
+
+  container.appendChild(listItem);
+});
+
+
+
+      </script>
+</body>
+</html>

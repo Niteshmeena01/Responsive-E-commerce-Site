@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+       width:100%;
+       height:80px;
+       background-color: rgb(255,255,255);
+       box-shadow:0px 2px 5px grey;
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+    
+  }  
+  .unknown{
+    width:100%;
+    height:auto;
+  }
+  .header a{
+    color: rgb(61,65,82);
+  }   
+  #icons{
+    text-decoration: none;
+    font-size:1.2em;
+  } 
+  #icons:hover{
+    color:orangered;
+  }
+
+        .main{
+            width:100%;
+            height:auto;
+            padding-top:20px;
+        }
+        .Pizzaitem{
+            width:430px;
+            height:350px;
+            background-color:white;
+            color:black;
+            float: left;
+
+        }
+        .BigContainer{
+        width:100%;
+        height:100vh;
+                     }
+        .left{
+            float: left;
+            width:78%;
+            height:auto;
+            
+        }    
+        .right{
+            float: left;
+            width:21.7%;
+            height:auto;
+            
+
+        }   
+        
+        .right:hover{
+          border-left:1px solid black;
+          background-color:lightgrey;
+        }
+          #products{
+                  float: left;
+                  width:33%;
+                  height:300px;
+                 
+            }
+            #products img{
+                  width:60%;
+            }
+            #products button{
+                background-color: black;
+                color: white;
+                width:100px;
+                height:30px;
+                border-radius:10px;
+            }
+            #container{
+                width:100%;
+                height:auto;
+            
+              
+            }
+            #Cart{
+                width:100%;
+                height:auto;
+          
+                
+              
+            }
+            #addButton{
+                background-color: black;
+                color:white;
+                width:100px;
+                height:30px;
+                border-radius:10px;
+            }
+            .cartDiv{
+                width:100%;
+                height:200px;
+                margin-top:10%;
+               
+            }
+            .cartDiv img{
+                width:45%;
+                margin-left:30%;
+            }
+            .cartDiv p{
+                margin-left:39%;
+            }
+            .cartDiv #cartButton{
+                
+                width:10%;
+                background-color: black;
+                color: white;
+            }
+            .cartDiv #minusButton{
+                width:10%;
+                margin-left:40%;
+                background-color: black;
+                color: white;
+            }
+           #totalDiv{
+            width:100%;
+            height:100px;
+            margin-top:100px;
+           }
+           .total{
+            width:100%;
+        
+            height:15VH;
+            background-color:rgb(126, 115, 99);
+           }
+           #Cart{
+            height:89vh;
+            overflow-y:scroll;
+           }
+           @media screen and (max-width:1012px) {
+            .right h1{
+                 color: aqua;
+                 font-size:25px;
+            }
+           }
+           @media screen and (max-width:779px) {
+            .right h1{
+                 
+                 font-size:1em;
+            }
+           }
+           @media screen and (max-width:779px) {
+            #products{
+                 width:50%;
+
+                 
+            }
+           #products img{
+            width:50%;
+           } 
+           }
+
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <i class="fa-solid fa-burger" style="font-size:3rem; color:orangered; text-shadow:2px 0px 2px black;"></i>
+      <a href="" id="icons" style="color: orangered;">  <i class="fa-solid fa-magnifying-glass"></i> search</a>
+        <a href="" id="icons"><i class="fa-brands fa-free-code-camp"></i> Offers <em style="font-size:0.5rem; color: orangered;">NEW</em></a>
+       <a href="" id="icons"> <i class="fa-solid fa-circle-info"></i> Help</a>
+       <a href="" id="icons"> <i class="fa-solid fa-user"></i> Sign in</a>
+        <a href="" id="icons"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+    </header>
+    <div class="BigContainer">
+        <div class="left">
+            <div class="main">
+                <center>
+                <h1 style="color:red; text-shadow:2px 2px 2px black;">Pizza <i class="fa-solid fa-pizza-slice"></i></h1>
+            </center>
+                <br>
+                <h1 style="margin-left:30px;">Pizza Menu</h1>
+                <br>
+                <h2 style="margin-left:30px;">Cheesilicious pizzas to make every day extraordinary.</h2>
+                <br>
+             </div>
+             <div id="container">
+        
+             </div>
+        </div>
+        
+        <div class="right">
+                <h1 style=" margin-left:22%;">cartAmount</h1>
+          
+            <div id="Cart">
+                
+            </div>
+            <div class="total" id="TT" >
+                <br>
+         <p >CART TOTAL :<span id="priceTage"></span></p>
+         <br>
+         <button style="width:30%; height:25px; margin-left:35%; background-color: black; color: white;">Order</button>
+        
+        </div>
+        
+        </div>
+        
+    </div>
+    
+ 
+ <script src="./responsive.js"></script>
+</body>
+</html>
